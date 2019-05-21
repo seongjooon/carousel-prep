@@ -13,9 +13,14 @@ div.window-box {
   height: 500px;
   border: 3px solid;
   padding: 10px;
+  overflow: hidden;
 }
 
-.image-list > img {
+.image-list {
+  width: 2500px;
+}
+
+.image-list>img {
   width: 474px;
   height: 474px;
 }
