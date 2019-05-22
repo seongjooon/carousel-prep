@@ -13,7 +13,7 @@ div.window-box {
   height: 500px;
   border: 3px solid;
   padding: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image-list {
@@ -23,4 +23,19 @@ div.window-box {
 .image-list>img {
   width: 474px;
   height: 474px;
+}
+
+.buttons {
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.buttons>button {
+  background-color: gray;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin: 5px 5px;
 }

@@ -19,6 +19,41 @@
     </div>
   </div>
 
+  <div class="buttons">
+    <button id="leftBtn">Before</button>
+    <button id="rightBtn">After</button>
+  </div>
+
+  <script>
+    (function () {
+      let focus = 0;
+
+      const leftBtn = document.getElementById('leftBtn').addEventListener('click', moveToLeft)
+      const rightBtn = document.getElementById('rightBtn').addEventListener('click', moveToRight)
+
+      function moveToLeft() {
+        focus++;
+        if (focus === 1) {
+          focus = -4;
+          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
+        } else {
+          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
+        }
+      }
+
+      function moveToRight() {
+        focus--;
+        if (focus === -5) {
+          focus = 0;
+          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
+        } else {
+          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
+        }
+      }
+    })()
+
+  </script>
+
 
 </body>
 
