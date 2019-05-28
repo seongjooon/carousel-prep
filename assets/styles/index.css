@@ -1,6 +1,6 @@
 html, body {
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #0f130f;
 }
 
 *, *:before, *:after {
@@ -8,34 +8,63 @@ html, body {
 }
 
 div.window-box {
-  margin: 50px auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
   width: 500px;
   height: 500px;
-  border: 3px solid;
-  padding: 10px;
-  /* overflow: hidden; */
+  /* padding: 10px; */
+  overflow: hidden;
 }
 
-.image-list {
+#image-list {
   width: 2500px;
 }
 
-.image-list>img {
+#image-list>img {
   width: 474px;
   height: 474px;
 }
 
-.buttons {
-  width: 500px;
+#buttons {
+  position: absolute;
   height: 200px;
   text-align: center;
   margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  top: 45%;
 }
 
-.buttons>button {
-  background-color: gray;
+#leftBtn {
+  float: left;
+  background-color: #45f7aa;
   color: white;
-  padding: 10px 30px;
-  font-size: 20px;
-  margin: 5px 5px;
+  font-size: 21px;
+  margin: 10px;
+  border: 0;
+  border-radius: 80px;
+  outline: 0;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+}
+
+#rightBtn {
+  float: right;
+  background-color: #45f7aa;
+  color: white;
+  font-size: 21px;
+  margin: 10px;
+  border: 0;
+  border-radius: 80px;
+  outline: 0;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
 }

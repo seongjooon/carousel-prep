@@ -10,48 +10,21 @@
 <body>
 
   <div class="window-box">
-    <div class="image-list">
-      <img src="assets/images/1.jpg" alt="kakao-friends">
-      <img src="assets/images/2.jpg" alt="kakao-friends">
-      <img src="assets/images/3.jpg" alt="kakao-friends">
-      <img src="assets/images/4.jpg" alt="kakao-friends">
-      <img src="assets/images/5.jpg" alt="kakao-friends">
+    <div id="image-list">
+      <img src="assets/images/1.jpg" alt="kakao-friends1">
+      <img src="assets/images/2.jpg" alt="kakao-friends2">
+      <img src="assets/images/3.jpg" alt="kakao-friends3">
+      <img src="assets/images/4.jpg" alt="kakao-friends4">
+      <img src="assets/images/5.jpg" alt="kakao-friends5">
     </div>
   </div>
 
-  <div class="buttons">
+  <div id="buttons">
     <button id="leftBtn">Before</button>
     <button id="rightBtn">After</button>
   </div>
 
-  <script>
-    (function () {
-      let focus = 0;
-
-      const leftBtn = document.getElementById('leftBtn').addEventListener('click', moveToLeft)
-      const rightBtn = document.getElementById('rightBtn').addEventListener('click', moveToRight)
-
-      function moveToLeft() {
-        focus++;
-        if (focus === 1) {
-          focus = -4;
-          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
-        } else {
-          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
-        }
-      }
-
-      function moveToRight() {
-        focus--;
-        if (focus === -5) {
-          focus = 0;
-          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
-        } else {
-          document.getElementsByClassName("image-list")[0].style.transform = 'translate(' + 474 * focus + 'px)';
-        }
-      }
-    })()
-
+  <script src="app/index.js">
   </script>
 
 
