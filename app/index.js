@@ -12,7 +12,7 @@ Carusel.prototype.moveHorizontal = function (direction) {
     direction === "left" ? this.focus++ : this.focus--;
     if (this.focus === 1) this.focus = -this.imageNum + 1;
     if (this.focus === -this.imageNum) this.focus = 0;
-    el("image-list").style.transform = 'translate(' + 474 * this.focus + 'px)';
+    el("image-list").style.transform = 'translate(' + 600 * this.focus + 'px)';
 }
 
 Carusel.prototype.getBtn = function (direction) {

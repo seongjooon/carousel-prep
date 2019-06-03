@@ -1,48 +1,43 @@
-html, body {
+* {
   box-sizing: border-box;
   background-color: #0f130f;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+  margin: 0;
 }
 
 div.window-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -250px;
-  width: 500px;
-  height: 500px;
-  /* padding: 10px; */
+  margin: 100px auto 50px;
+  width: 600px;
   overflow: hidden;
 }
 
 #image-list {
-  width: 2500px;
+  width: 3600px;
+  padding: 0;
+  transition: all 500ms;
 }
 
-#image-list>img {
-  width: 474px;
-  height: 474px;
+#image-list>li {
+  height: 400px;
+  width: 600px;
+  list-style: none;
+  float: left;
+}
+
+#image-list>li>img {
+  width: 100%;
+  height: 100%;
 }
 
 #buttons {
-  position: absolute;
   height: 200px;
   text-align: center;
   margin: 0 auto;
-  overflow: hidden;
-  clear: both;
-  width: 100%;
-  top: 45%;
 }
 
 #leftBtn {
-  float: left;
+  /* float: left; */
   background-color: #45f7aa;
-  color: white;
+  color: black;
   font-size: 21px;
   margin: 10px;
   border: 0;
@@ -55,9 +50,9 @@ div.window-box {
 }
 
 #rightBtn {
-  float: right;
+  /* float: right; */
   background-color: #45f7aa;
-  color: white;
+  color: black;
   font-size: 21px;
   margin: 10px;
   border: 0;
