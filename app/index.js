@@ -17,7 +17,7 @@ Carusel.prototype.moveHorizontal = function (direction) {
 
 Carusel.prototype.getBtn = function (direction) {
     el(direction + 'Btn')
-        .addEventListener('click', Carusel.prototype.moveHorizontal.bind(this, direction))
+        .addEventListener('click', Carusel.prototype.moveHorizontal.bind(this, direction));
 }
 
 const imageNum = el("image-list").children.length;
